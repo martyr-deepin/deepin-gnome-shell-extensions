@@ -1,0 +1,7 @@
+{
+    "shell-version": ["3.4"],
+    "uuid": "classic-systray@linuxdeepin.com",
+    "name": "Classic Systray",
+    "description": "GNOME2 style systray",
+    "url": "http://www.linuxdeepin.com/"
+}

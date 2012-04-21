@@ -1,0 +1,9 @@
+{
+	"shell-version": [
+		"3.4"
+	], 
+	"uuid": "hide-messagetray@linuxdeepin.com",
+	"name": "Hide Message Tray",
+	"description": "Hide Message Tray.",
+	"version": 1
+}
