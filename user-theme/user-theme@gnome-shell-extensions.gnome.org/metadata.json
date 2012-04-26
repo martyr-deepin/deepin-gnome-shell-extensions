@@ -1,9 +1,0 @@
-{
-    "uuid": "user-theme@gnome-shell-extensions.gnome.org",
-    "name": "User Themes",
-    "description": "Load shell themes from user directory",
-    "shell-version": [ "3.2", "3.4" ],
-    "localedir": "/usr/share/locale",
-    "original-authors": [ "john.stowers@gmail.com" ],
-    "url": "http://git.gnome.org/gnome-shell-extensions"
-}
