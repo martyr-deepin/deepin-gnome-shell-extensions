@@ -87,13 +87,13 @@ function main(meta) {
         for (i = children.length - 1; i >= 0; i--) {
             let rolePosition = children[i]._rolePosition;
             if (position > rolePosition) {
-                Main.panel._rightBox.insert_actor(box, i + 1);
+                Main.panel._rightBox.insert_child_at_index(box, i + 1);
                 break;
             }
         }
         if (i == -1) {
             // If we didn't find a position, we must be first
-            Main.panel._rightBox.insert_actor(box, 0);
+            Main.panel._rightBox.insert_child_at_index(box, 0);
         }
         box._rolePosition = position;
         box.add_actor(icon);

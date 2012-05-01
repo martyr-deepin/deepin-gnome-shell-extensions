@@ -1333,5 +1333,5 @@ function disable() {
     dock = null;
 
     // Restore application menu.
-    Main.panel._leftBox.insert_actor(appMenu.actor, 1);
+    Main.panel._leftBox.insert_child_at_index(appMenu.actor, 1);
 }
