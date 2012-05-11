@@ -628,7 +628,7 @@ SwitchPopupWindow.prototype = {
     keyReleaseEvent: function(actor, event) {
         let [x, y, mods] = global.get_pointer();
 		
-        if (mods == 0 && this.modifierMask == 1)
+        if ((mods == 0 || mods == 16) && this.modifierMask == 1)
             this.finish();
 
         return true;
