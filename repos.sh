@@ -8,7 +8,7 @@ case "$1" in
         git pull origin master
         ;;
     "push" )
-        git push git@github.com:manateelazycat/deepin-gnome-shell-extensions.git
+        git push git@github.com:linuxdeepin/deepin-gnome-shell-extensions-private.git
         ;;
     "revert" )
         git checkout -- .
