@@ -472,7 +472,7 @@ PanelSettings.prototype = {
     _init: function() {
         this._settings = new SettingsManager;
         this._settings.load();
-        
+		
         this._panelSettingsMenu = new PopupMenu.PopupSubMenuMenuItem(_("Panel Settings"));
 
         this._edgeManager = new PanelEdgeManager(this._settings);
