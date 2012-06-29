@@ -536,14 +536,12 @@ PanelSettings.prototype = {
     },
     _onEdgeTopItemClick: function(){
 		viewSelectorActor.set_position(0, 53);
-		global.log("top" + viewSelectorActor.get_position());
 		
         this._edgeManager.setEdge(EDGE_TOP, true);
         this._updateEdgeState();
     },
     _onEdgeBottomItemClick: function(){
 		viewSelectorActor.set_position(0, 0);
-		global.log("bottom" + viewSelectorActor.get_position());
 		
         this._edgeManager.setEdge(EDGE_BOTTOM, true);
         this._updateEdgeState();

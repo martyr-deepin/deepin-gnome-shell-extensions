@@ -526,6 +526,7 @@ DockIcon.prototype = {
         }
 
         this._menu.popup();
+		this._menu.updatePosition();
 		
         return false;
     },
@@ -726,7 +727,19 @@ DockIconMenu.prototype = {
 
         Main.layoutManager.addChrome(this.actor);
     },
-
+	
+	updatePosition: function() {
+		let [panel_x, panel_y] = Main.panel.actor.get_parent().get_position();
+		let [panel_width, panel_height] = Main.panel.actor.get_size();
+		let screen_height = Main.layoutManager.primaryMonitor.height;
+		
+		if (screen_height - panel_y - panel_height > 100){
+			this._boxPointer._arrowSide = St.Side.TOP;
+		} else {
+			this._boxPointer._arrowSide = St.Side.BOTTOM;
+		}
+	}, 
+	
     _redisplay: function() {
         this.removeAll();
 
@@ -745,6 +758,7 @@ DockIconMenu.prototype = {
                                                             : _("Add to Favorites"));
 
         this._highlightedItem = null;
+		
     },
 
     _onActivate: function (actor, child) {
@@ -1045,8 +1059,18 @@ PopupMenuAppSwitcherItem.prototype = {
             let [iconX, iconY] = this.dockIcon.actor.get_transformed_position();
             let windowOffsetX = iconX + windowWidth / 2;
             let windowOffsetY = iconY;
-            this.menu.box.set_position(windowOffsetX, windowOffsetY);
             this.menu.box.set_size(windowWidth, windowHeight);
+			this.menu.box.set_position(windowOffsetX, windowOffsetY);
+			
+			let [panel_x, panel_y] = Main.panel.actor.get_parent().get_position();
+			let [panel_width, panel_height] = Main.panel.actor.get_size();
+			let screen_height = Main.layoutManager.primaryMonitor.height;
+			
+			if (screen_height - panel_y - panel_height > windowHeight){
+				this.menu._boxPointer._arrowSide = St.Side.TOP;
+			} else {
+				this.menu._boxPointer._arrowSide = St.Side.BOTTOM;
+			}
 
             for (let i = 0; i < windows.length; i++) {
                 let index = i;
