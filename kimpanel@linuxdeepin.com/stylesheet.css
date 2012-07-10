@@ -1,0 +1,28 @@
+.kimpanel-label {
+  font-family:sans;
+  font-weight:normal;
+  padding: 5px;
+  color: #FFFFFF;
+}
+
+.kimpanel-label-item {
+  padding: 3px;
+  color: #FFFFFF;
+}
+
+.kimpanel-candidate-item {
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.kimpanel-candidate-item:hover {
+  color: #729FCF;
+}
+
+.kimpanel-candidate-item:active {
+  color: #729FCF;
+}
+
+.icon-disable {
+  color:rgba(150,150,150,0.5);
+}
