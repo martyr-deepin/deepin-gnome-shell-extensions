@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: FerN Talavera <fejnartal@gmail.com>\n"
+"Language-Team: \n"
+
+msgid "New Window"
+msgstr "Nueva Ventana"
+
+msgid "Quit Application"
+msgstr "Cerrar Aplicación"
+
+msgid "Remove from Favorites"
+msgstr "Borrar Favorito"
+
+msgid "Add to Favorites"
+msgstr "Hacer Favorito"
+
+msgid "Show Desktop"
+msgstr "Ver Escritorio"
+
